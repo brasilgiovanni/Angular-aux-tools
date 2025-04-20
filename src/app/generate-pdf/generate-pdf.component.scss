@@ -1,0 +1,36 @@
+#pdf-content {
+    background: white;
+    margin: 0px 0.5em;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+    font-size: 14pt;
+    color: blue;
+    margin: 16px 0;
+}
+
+p {
+  margin-bottom: 0px;
+  font-size: 12pt;
+  margin-top: 8px;
+}
+
+ul {
+  li {
+    font-size: 12pt;
+  }
+}
