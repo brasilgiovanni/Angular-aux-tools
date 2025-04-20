@@ -1,59 +1,46 @@
-# AuxiliaryTools
+# 🚀 Auxiliary Tools for Angular 19
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+A demo Angular 19 application showcasing handy helper libraries for front‑end developers:
 
-## Development server
+1. **PDF Generation** with two approaches  
+2. **QR Code** & **Barcode** generation  
+3. A simple **menu** to navigate between demos  
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 📦 Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 1. Generate PDF with `jsPDF` + `html2canvas`
+- **Imports**:
+  ```ts
+  import { jsPDF } from 'jspdf';
+  import html2canvas from 'html2canvas';
+  ```
+- Challenge: Single‑image capture → no automatic pagination
+- Solution:
+-- Manually slice the canvas into A4‑sized chunks;
+-- Apply real‑world margins (2.5 cm top/bottom, 3 cm left/right);
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 1. Generate PDF with html2pdf.js
+- **Imports**:
+- ```ts
+  import html2pdf from 'html2pdf.js';
+  ```
+- Benefit:
+   - Simple API (.set(opts).from(element).save())
+   - Built‑in pagination & margin support
+   - Define explicit page breaks in your HTML template
+ 
+### 3. Generate QR Code & Barcode
+- QR Code
+- ```
+  import { QRCodeComponent } from 'angularx-qrcode';
+  ```
+- Barcode
+- ```
+  import { NgxBarcode6Module } from 'ngx-barcode6';
+  ```
+- How it works:
+  - User types URL/text
+  - “Generate” button becomes active
+  - Renders <qrcode> or <ngx-barcode> in real time
