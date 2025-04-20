@@ -1,1 +1,34 @@
-<p>generate-qr-code works!</p>
+<div class="container">
+    <h1>Generate a qrcode and a barcode</h1>
+    <div class="container-section">
+        <section>
+            <form>
+            <label><strong>qrcode</strong></label>
+            <input #qrcodeInput type="text" (input)="onInputChange(qrcodeInput.value, 'qrcode')">
+            <button type="button" (click)="onGenerate('qrcode', qrcodeInput.value)"  [disabled]="qrcodeDisabled">Generate qrcode</button>
+            </form>
+            @if (myAngularxQrCode != "") {
+                <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+            }
+        </section>
+        <section>
+            <form>
+              <label><strong>barcode</strong></label>
+              <input #barcodeInput type="text" (input)="onInputChange(barcodeInput.value, 'barcode')">
+              <button type="button" (click)="onGenerate('barcode', barcodeInput.value)" [disabled]="barcodeDisabled">Generate barcode</button>
+            </form>
+          
+            @if (myBarcode != "") {
+              <ngx-barcode6 
+                [bc-value]="myBarcode" 
+                [bc-format]="'CODE128'" 
+                [bc-width]="2" 
+                [bc-height]="50" 
+                [bc-display-value]="true">
+              </ngx-barcode6>
+            }
+          </section> 
+    </div>
+    
+</div>
+

@@ -1,16 +1,22 @@
 #pdf-content {
-    background: white;
-    margin: 0px 0.5em;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow-wrap: break-word;
-  }
+  background: white;
+  margin: 0px 0.5em;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
 
 h1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   margin-top: 0px;
   font-size: 20pt;
+  span {
+    color: gray;
+  }
 }
 
 h2 {
@@ -18,9 +24,9 @@ h2 {
 }
 
 h3 {
-    font-size: 14pt;
-    color: blue;
-    margin: 16px 0;
+  font-size: 14pt;
+  color: blue;
+  margin: 16px 0;
 }
 
 p {
