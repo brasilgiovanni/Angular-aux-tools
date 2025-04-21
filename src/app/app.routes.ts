@@ -27,5 +27,10 @@ export const routes: Routes =
         loadComponent: () =>
           import('./scanner-qr-code/scanner-qr-code.component').then(c => c.ScannerQrCodeComponent)
       },
+      {
+        path: 'charts-js',
+        loadComponent: () =>
+          import('./charts-js/charts-js.component').then(c => c.ChartsJSComponent)
+      },
 
   ];

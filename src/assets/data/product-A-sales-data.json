@@ -1,0 +1,18 @@
+[
+    { "year": 2010, "sales": 120, "color": "#FF6384" },
+    { "year": 2011, "sales": 135, "color": "#36A2EB" },
+    { "year": 2012, "sales": 150, "color": "#FFCE56" },
+    { "year": 2013, "sales": 165, "color": "#4BC0C0" },
+    { "year": 2014, "sales": 180, "color": "#9966FF" },
+    { "year": 2015, "sales": 170, "color": "#FF9F40" },
+    { "year": 2016, "sales": 185, "color": "#FF6384" },
+    { "year": 2017, "sales": 200, "color": "#36A2EB" },
+    { "year": 2018, "sales": 215, "color": "#FFCE56" },
+    { "year": 2019, "sales": 230, "color": "#4BC0C0" },
+    { "year": 2020, "sales": 245, "color": "#9966FF" },
+    { "year": 2021, "sales": 260, "color": "#FF9F40" },
+    { "year": 2022, "sales": 275, "color": "#FF6384" },
+    { "year": 2023, "sales": 290, "color": "#36A2EB" },
+    { "year": 2024, "sales": 305, "color": "#FFCE56" },
+    { "year": 2025, "sales": 320, "color": "#4BC0C0" }
+  ]
