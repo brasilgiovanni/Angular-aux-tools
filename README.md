@@ -44,3 +44,30 @@ A demo Angular 19 application showcasing handy helper libraries for front‑end 
   - User types URL/text
   - “Generate” button becomes active
   - Renders <qrcode> or <ngx-barcode> in real time
+### 4. Generate Charts with Chart JS
+- Chart JS
+- ```ts
+  import {
+    Chart,
+    registerables // ✅ Required to make Chart.js work properly
+  } from 'chart.js';
+
+  // Register necessary components globally
+  Chart.register(...registerables);
+  ```
+- How it works:
+  - The application uses a mocked sales dataset, formatted as:
+  - ```
+    {
+    year: number,      // Ex: 2010
+    sales: number,     // Ex: 120
+    color: string      // Ex: '#FF6384' (used to color the chart elements)
+    }
+    ```
+  - This data is stored in a .json file and loaded through an Angular service (ChartJsService), simulating a real API.
+  - After fetching the data, the component ChartsJSComponent processes it and builds:
+    - ✅ Line Chart
+    - ✅ Bar Chart
+    - ✅ Pie Chart
+    - ✅ Doughnut Chart
+
